@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+   height: 80px;
+   width: 80px;
+   text-align: center;
+   font-size: 50px;
+
+}
+.a{
+    color: red;
+    
+}
+.g{
+    color: aqua;
+}
+#b{
+    background-color:whitesmoke;
+}
+#c{
+    background-color:steelblue;
+}
+#b:hover{
+ color:slateblue;
+}
+#c:hover{
+    color: chartreuse;
+}
+
+
