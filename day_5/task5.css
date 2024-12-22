@@ -1,0 +1,22 @@
+body{
+    background-image: url(./wp4166529.jpg);
+    background-repeat: no-repeat;
+    border: 50px;
+    position: relative;
+}
+.g{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+.j{
+    position:absolute;
+    bottom: -500px;
+    left: 1px;
+
+}
+.p{
+    position:absolute;
+    bottom: -500px;
+    right: 5px;
+}
