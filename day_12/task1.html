@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .parent{
+    display: grid;
+    grid-template-areas:
+    "header nav section section"
+    "header nav section section "
+    "header aside aside article"
+    "header aside aside article"
+    "footer footer footer article";
+ }
+ .child1 ,.child2,.child3,.child4,.child5,.child6{
+border: 1px solid;
+padding: 50px;
+margin: 5px;
+text-align: center;
+
+ }
+ .child1{
+   grid-area: header;
+   background-color: aquamarine; 
+
+ }
+ .child2{
+ grid-area: nav;
+ background-color: lightsalmon;
+}
+ .child3{
+    grid-area: section;
+    background-color: slateblue;
+ }
+ .child4{
+    grid-area: article;
+    background-color: lightgreen;
+ }
+ .child5{
+    grid-area: aside;
+    background-color: red;
+ }
+ .child6{
+    grid-area: footer;
+    background-color: darkgray;
+ }
+</style>
+<body>
+    <h1></h1>
+    <div class="parent">
+        <div class="child1">header</div>
+        <div class="child2">nav</div>
+        <div class="child3">section</div>
+        <div class="child4">article</div>
+        <div class="child5">aside</div>
+        <div class="child6">footer</div>
+
+    </div>
+</body>
+</html>

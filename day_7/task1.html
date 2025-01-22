@@ -3,107 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inset and Outset Box Shadows</title>
+    <title>Document</title>
     <style>
-       body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 200px; 
-    flex-wrap: wrap;
-}
+            padding: 25px;
+             
+             color: rgba(0,0,0,0.795);
+             font-size: 20px;
+             background-color: white;
+             z-index:1;
+             
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav-right{
+            
+            float: right;
+        }
+        #container{
+            width:70%
+            margin: auto;
+        }
+        
+        img{
+            position: relative;
+        }
+        .p1{
+            position:absolute;
+            top: 500px;
+            left: 45px;
+            color: aliceblue;
+            font-size: 600%;
+        }
+        #img{
+            box-sizing: border-box
+            width:49%;
+            float:left;
+            padding:10px 20px;
+           
+        }
+        #text{
+            font-size: 36px; !important
+        }
+        #img1{
+            box-sizing: border-box
+            width:49%;
+            float:right;
+            padding:10px 20px;
+        }
+        #text1{
+            text-align: left;
+            font-size: 20px;
+        }
+        #img1{
+            margin-top: -550px;
+        }
+        #hh{
 
-
-.stackedsquares,
-.nestedsquares {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.stackedsquares {
-    box-shadow: 
-        blue 0px 0px 0px 2px inset,
-        rgb(255, 255, 255) 20px -20px 0px -3px,
-        rgb(31, 193, 27) 20px -20px,
-        rgb(255, 255, 255) 40px -40px 0px -3px,
-        rgb(255, 217, 19) 40px -40px,
-        rgb(255, 255, 255) 60px -60px 0px -3px,
-        rgb(255, 156, 85) 60px -60px,
-        rgb(255, 255, 255) 80px -80px 0px -3px,
-        rgb(255, 85, 85) 80px -80px;
-}
-
-.nestedsquares {
-    box-shadow: 
-        rgb(85, 91, 255) 0px 0px 0px 6px, 
-        rgb(31, 193, 27) 0px 0px 0px 12px, 
-        rgb(255, 217, 19) 0px 0px 0px 18px, 
-        rgb(255, 156, 85) 0px 0px 0px 24px, 
-        rgb(255, 85, 85) 0px 0px 0px 30px;
-}
-
-.stackedsquares img,
-.nestedsquares img {
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-}
-
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; 
-        gap: 30px; 
-    }
-
-    .stackedsquares,
-    .nestedsquares {
-        width: 80vw; 
-        height: 80vw; 
-        max-width: 200px; 
-        max-height: 200px;
-        margin-bottom: 30px; 
-    }
-
-    .stackedsquares img,
-    .nestedsquares img {
-        width: 70%;
-        height: 70%;
-    }
-}
-
-
-
+        }
+        #last{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="stackedsquares">
-            <img src="https://pngimg.com/uploads/spider_man/spider_man_PNG11.png" alt="Spiderman">
+    <div class="nav">
+        <a href="#home-section">Gourmet au catering</a>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#Contact">Contact</a>
         </div>
-
-        
-        <div class="nestedsquares">
-            <img src="https://toppng.com/uploads/preview/hulk-hot-toys-marvel-the-avengers-hulk-sixth-scale-figure-11563058242cpfbezldbh.png" alt="Hulk">
+    </div>
+    <div id="home">
+        <img src="./burger.jpg" width="100%" alt="">
+        <p class="p1">Le catering</p>
+    </div>
+    <div id="container">
+        <div id="about">
+            <div id="img">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" width="100%" height="500vh" alt="">
+            </div>
+            <div id="text">
+                <h1>AboutCatering</h1>
+                <br>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            </div>     
         </div>
+        <br>
+        <br>
+        <div id="menu">
+            <div id="text1">
+                <h1>Our Menu</h1>
+                <h3>Bread Basket</h3>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h3>Honey Almond Granola with Fruits</h3>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h3>Belgian Waffle</h3>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+                <h3>Scrambled eggs</h3>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h3>Blueberry Pancakes</h3>
+                <p>With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div id="img1">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" width="80%" height="500px" >
+            </div>
+        </div>
+        <br>
+        <div id="Contact" style="text-align: center;">
+            <h1 style="text-align: center;">CONTACT</h1>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+            <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <bR>
+                <br>
+            <form action="" id="hh">
+                <input type="text" placeholder="Name"><br><br>
+                <input type="text" placeholder="how many people"><br><br>
+                <input type="date"><br><br>
+                <input type="text" placeholder="Massage\special requirements"><br><br>
+                <button>SEND MESSAGE</button><br>
+            </form>
+        </div>
+    </div><br><br>
+    <div id="last">
+         powered by nikhil
     </div>
 </body>
 </html>
